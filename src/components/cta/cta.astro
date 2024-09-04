@@ -1,15 +1,12 @@
 ---
-const {title, topper, text, button1, btnlink1, medImage, largeImage, imageAlt} = Astro.props;
+const {title, topper, button1, btnlink1, medImage, largeImage, imageAlt} = Astro.props;
 ---
 <section id="cta-1071">
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">{topper}</span>
-                <h2 class="cs-title">{title}</h2>
-                <p>
-                  {text}
-                </p>
+              <h2 class="cs-title">{title}</h2>
+              <span class="cs-topper">{topper}</span>
             </div>
             <div class="cs-button-box">
                 <a href={btnlink1} class="cs-button-solid">{button1}</a>

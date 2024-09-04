@@ -2,17 +2,16 @@
 spec:
   structures:
     - content_blocks
-  label: Alberta Vision Care CTA Section
-  description: Section with a call to action for Alberta Vision Care
+  label:  CTA Section
+  description: Section with a call to action 
   icon: 'visibility'
   tags:
     - CTA
-    - Vision Care
     - Section
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: Alberta Vision Care CTA Section
+  title: Welcome
   fields:
     - type: string
       label: Topper Text
@@ -36,11 +35,6 @@ blueprint:
           label: Button Link
           key: link
           default: 'https://example.com'
-
-    - type: string
-      label: description
-      key: description
-      default: 
 
     - type: string
       label: Medium Image URL
