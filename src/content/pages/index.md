@@ -16,19 +16,15 @@ content_blocks:
   - _bookshop_name: fourcards-alt
     title: Our Services
     cards:
-      - image: /images/alberta-vision-care-eye-exam.webp
-        title: Eye Exams
-        description: >-
-          Comprehensive exams for all ages, including pediatric and senior eye
-          care.
-      - image: /images/alberta-vision-care-emergency-care.webp
-        title: Emergency Care
-        description: Immediate attention for eye injuries or sudden vision problems.
-      - image: /images/alberta-vision-care-disease-management.webp
-        title: Disease Management
-        description: >-
-          Expert management of conditions such as diabetic retinopathy,
-          glaucoma, cataracts, and dry eyes.
+      - image: /images/banana-bread.png
+        title: Bananna Bread
+        description: Bananna Bread
+      - image: /images/baked-beans.png
+        title: Baked Beans
+        description: Baked Beans
+      - image: /images/caramel-sauce.png
+        title: Rum Caramel Sauce
+        description: Rum Caramel
   - _bookshop_name: left-right
     background_color: '#f2f2f2'
     heading:
