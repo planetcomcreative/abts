@@ -8,10 +8,13 @@ import { header } from '../../../data/navigation.json';
   x-transition
   style={`background-color: ${header.background_color}; color: ${header.color};`}>
   <div class="header__container">
-    <nav class="header__nav">
+    <div class="mx-auto flex justify-center items-center">
       <a class="header__logo-link" href={header.logo_url}>
         <img class="header__logo-image" src={header.logo} alt="Logo" />
       </a>
+    </div>
+    <nav class="header__nav">
+
       <button class="hamburger" @click="open = ! open">
         <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -65,7 +68,7 @@ import { header } from '../../../data/navigation.json';
 
   .header__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-block: 1rem;
   }
