@@ -25,28 +25,4 @@ content_blocks:
       - image: /images/caramel-sauce.png
         title: Rum Caramel Sauce
         description: Rum Caramel
-  - _bookshop_name: left-right
-    background_color: '#f2f2f2'
-    heading:
-      heading_text: Trusted Eye Care in Edmonton & Surrounding Areas
-      color: '#393939'
-    text:
-      markdown_content: >-
-        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
-        Grove, St. Albert, and Sherwood Park. Conveniently located within
-        Superstore Optical locations, we offer flexible hours, including
-        evenings and weekends, to accommodate your busy schedule
-      color: '#393939'
-    image:
-      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
-      alt_text: Alberta Vision Care Eye Chart
-    flipped: false
-    button:
-      _bookshop_name: buttons/primary
-      button_text: Contact Us
-      button_link: /contact
-      background_color: '#034AD8'
-      hover_brightness: 0.85
-      text_color: '#FEF9EF'
-      button_icon: Github
 ---
