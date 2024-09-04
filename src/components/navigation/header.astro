@@ -1,29 +1,30 @@
 ---
-import { header } from '../../../data/navigation.json';
-import siteData from '../../../data/site.json';
+import { header } from "../../../data/navigation.json";
+import siteData from "../../../data/site.json";
 ---
 
 <header
   class="header"
   x-data="{ open: false }"
   x-transition
-  style={`background-color: ${header.background_color}; color: ${header.color};`}>
+  style={`background-color: ${header.background_color}; color: ${header.color};`}
+>
   <div class="header__container">
     <div class="mx-auto flex justify-center items-center">
-      <a class="header__logo-link" href={header.logo_url}>
-       <h1 class="text-4xl">
-        {siteData.site_title}
-       </h1>
+      <a class="header__logo-link py-8" href={header.logo_url}>
+        <h1 class="text-4xl">
+          {siteData.site_title}
+        </h1>
       </a>
     </div>
     <nav class="header__nav">
-
       <button class="hamburger" @click="open = ! open">
         <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <path
               d="M0 16h24v-2.667H0V16zm0-6.667h24V6.667H0v2.666zM0 0v2.667h24V0H0z"
-              id="a">
+              id="a"
+            >
             </path>
           </defs>
           <g fill="none" fill-rule="evenodd">
@@ -41,7 +42,8 @@ import siteData from '../../../data/site.json';
         class="header__nav-links"
         x-show="open"
         x-transition
-        @click.outside="open = false">
+        @click.outside="open = false"
+      >
         {
           header.links.map((link) => {
             return (
@@ -60,9 +62,9 @@ import siteData from '../../../data/site.json';
 
 <style>
   .header__container {
-    max-width: var(--pageContainer);
+    /* max-width: var(--pageContainer); */
     margin: 0 auto;
-    padding-inline: var(--pagePadding);
+    /* padding-inline: var(--pagePadding); */
   }
 
   .header li {
@@ -74,6 +76,9 @@ import siteData from '../../../data/site.json';
     justify-content: center;
     align-items: center;
     padding-block: 1rem;
+    background: #ed2e7b;
+    color: #fff;
+    padding: 20px 0;
   }
 
   .header__logo-image {
