@@ -14,20 +14,8 @@
         "text": "About"
       },
       {
-        "link": "/frequently-asked-questions",
-        "text": "FAQs"
-      },
-      {
         "link": "/contact/",
         "text": "Contact"
-      },
-      {
-        "link": "/locations",
-        "text": "Locations"
-      },
-      {
-        "link": "/book-an-eye-exam/",
-        "text": "Book Appointment"
       }
     ]
   },
