@@ -1,8 +1,8 @@
 spec:
   structures:
     - content_blocks
-  label: Four Cards Section - Alt
-  description: Section with four cards
+  label: Cards Section - Alt
+  description: Section with cards
   icon: 'business'
   tags:
   - Cards
