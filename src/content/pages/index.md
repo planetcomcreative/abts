@@ -25,4 +25,7 @@ content_blocks:
       - image: /images/caramel-sauce.png
         title: Rum Caramel Sauce
         description: Rum Caramel
+  - _bookshop_name: cta
+    title: Welcome
+    fields: []
 ---
