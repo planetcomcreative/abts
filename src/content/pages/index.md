@@ -13,6 +13,25 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
+  - _bookshop_name: fourcards-alt
+    title: Our Services
+    cards:
+      - image: /images/alberta-vision-care-eye-exam.webp
+        title: Eye Exams
+        description: >-
+          Comprehensive exams for all ages, including pediatric and senior eye
+          care.
+      - image: /images/alberta-vision-care-emergency-care.webp
+        title: Emergency Care
+        description: Immediate attention for eye injuries or sudden vision problems.
+      - image: /images/alberta-vision-care-disease-management.webp
+        title: Disease Management
+        description: >-
+          Expert management of conditions such as diabetic retinopathy,
+          glaucoma, cataracts, and dry eyes.
+      - image: /images/alberta-vision-care-consultation.webp
+        title: Consultations
+        description: Advice on eye nutrition and maintaining overall eye health.
   - _bookshop_name: hero
     background_image:
       image_path: /src/assets/images/alberta-vision-care-hero.webp
@@ -106,25 +125,6 @@ content_blocks:
           We prioritize patient education and communication, ensuring you
           understand your eye health, any potential issues, and how to address
           them.
-  - _bookshop_name: fourcards-alt
-    title: Our Services
-    cards:
-      - image: /images/alberta-vision-care-eye-exam.webp
-        title: Eye Exams
-        description: >-
-          Comprehensive exams for all ages, including pediatric and senior eye
-          care.
-      - image: /images/alberta-vision-care-emergency-care.webp
-        title: Emergency Care
-        description: Immediate attention for eye injuries or sudden vision problems.
-      - image: /images/alberta-vision-care-disease-management.webp
-        title: Disease Management
-        description: >-
-          Expert management of conditions such as diabetic retinopathy,
-          glaucoma, cataracts, and dry eyes.
-      - image: /images/alberta-vision-care-consultation.webp
-        title: Consultations
-        description: Advice on eye nutrition and maintaining overall eye health.
   - _bookshop_name: partners
     title: Our Partners
     partners:
