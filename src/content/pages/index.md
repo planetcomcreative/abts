@@ -25,4 +25,11 @@ content_blocks:
       - image: /images/caramel-sauce.png
         title: Rum Caramel Sauce
         description: Rum Caramel
+  - _bookshop_name: cta
+    title: Alberta Vision Care CTA Section
+    fields:
+      - type: stringnknhjk
+        label: Topper Text
+        key: topper_text
+        default: Your Vision, Our Prioritynnn,
 ---
