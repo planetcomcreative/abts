@@ -1,5 +1,6 @@
 ---
 import { header } from '../../../data/navigation.json';
+import siteData from '../../../data/site.json';
 ---
 
 <header
@@ -10,7 +11,9 @@ import { header } from '../../../data/navigation.json';
   <div class="header__container">
     <div class="mx-auto flex justify-center items-center">
       <a class="header__logo-link" href={header.logo_url}>
-        <img class="header__logo-image" src={header.logo} alt="Logo" />
+       <h1 class="text-4xl">
+        {siteData.site_title}
+       </h1>
       </a>
     </div>
     <nav class="header__nav">
