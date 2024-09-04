@@ -36,7 +36,12 @@ blueprint:
           label: Button Link
           key: link
           default: 'https://example.com'
-      
+
+    - type: string
+      label: description
+      key: description
+      default: 
+
     - type: string
       label: Medium Image URL
       key: medium_image_url
