@@ -29,9 +29,6 @@ content_blocks:
         description: >-
           Expert management of conditions such as diabetic retinopathy,
           glaucoma, cataracts, and dry eyes.
-      - image: /images/alberta-vision-care-consultation.webp
-        title: Consultations
-        description: Advice on eye nutrition and maintaining overall eye health.
   - _bookshop_name: left-right
     background_color: '#f2f2f2'
     heading:
