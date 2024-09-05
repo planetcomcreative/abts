@@ -12,42 +12,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: Welcome
-  fields:
-    - type: string
-      label: Topper Text
-      key: topper_text
-      default: 'Your Vision, Our Priority'
-      
-    - type: string
-      label: Title
-      key: title
-      default: 'Explore Our Services'
-      
-    - type: object
-      label: Button
-      key: button
-      fields:
-        - type: string
-          label: Button Text
-          key: text
-          default: 'Click Here'
-        - type: string
-          label: Button Link
-          key: link
-          default: 'https://example.com'
-
-    - type: string
-      label: Medium Image URL
-      key: medium_image_url
-      default: 'https://example.com/vision-care-medium.jpg'
-      
-    - type: string
-      label: Large Image URL
-      key: large_image_url
-      default: 'https://example.com/vision-care-large.jpg'
-      
-    - type: string
-      label: Image Alt Text
-      key: image_alt_text
-      default: 'Vision care clinic with eye exam equipment'
+  paragraph: Welcome to Jacqueline’s “Almost” Better Than Sex Foods. Fall in love
+            with our selection of delectable desserts ranging from tasty banana
+            bread to mouth watering caramel sauce. For more information or to
+            place an order please contact us.
 
