@@ -27,9 +27,9 @@ content_blocks:
         description: Rum Caramel
   - _bookshop_name: cta
     title: Welcome
-    fields:
-      - type: string
-        label: Topper Text
-        key: topper_text
-        default: Your Vision, Our Priority
+    paragraph: >-
+      Welcome to Jacqueline’s “Almost” Better Than Sex Foods. Fall in love with
+      our selection of delectable desserts ranging from tasty banana bread to
+      mouth watering caramel sauce. For more information or to place an order
+      please contact us.
 ---
