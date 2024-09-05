@@ -32,4 +32,5 @@ content_blocks:
       our selection of delectable desserts ranging from tasty banana bread to
       mouth watering caramel sauce. For more information or to place an order
       please contact us.
+    button1: Contact
 ---
