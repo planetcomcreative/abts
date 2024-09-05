@@ -3,14 +3,15 @@ import { header } from "../../../data/navigation.json";
 import siteData from "../../../data/site.json";
 ---
 
+
 <header
   class="header"
   x-data="{ open: false }"
   x-transition
   style={`background-color: ${header.background_color}; color: ${header.color};`}
 >
-  <div class="bg-pink-500 py-4 sm:flex justify-center items-center gap-32">
-    <span class="flex justify-center items-center gap-2">
+  <div class="header__top bg-pink-500 py-4 sm:flex justify-center items-center gap-32">
+    <span class="flex justify-center items-center py-4 sm:py-0 gap-2">
       <!--?xml version="1.0" encoding="iso-8859-1"?-->
       <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
       <svg
@@ -60,7 +61,7 @@ import siteData from "../../../data/site.json";
       <p class="text-white">780-340-7442</p>
     </span>
 
-    <span class="flex gap-2">
+    <span class="flex justify-center items-center py-4 sm:py-0 gap-2">
       <!--?xml version="1.0" encoding="utf-8"?--><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
       <svg
         fill="#fff"
@@ -75,7 +76,7 @@ import siteData from "../../../data/site.json";
       </svg>
       <p class="text-white">info@almostbetterthansex.ca</p>
     </span>
-    <div class="flex gap-4">
+    <div class="flex justify-center items-center gap-4">
       <!--?xml version="1.0" encoding="utf-8"?--><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg
     fill="#fff"
@@ -132,32 +133,12 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
 <div class="header__container">
   <div class="mx-auto flex justify-center items-center bg-slate-100">
     <a class="header__logo-link py-8" href={header.logo_url}>
-      <h1 class="text-4xl">
+      <h1 class="text-4xl text-center">
         {siteData.site_title}
       </h1>
     </a>
   </div>
   <nav class="header__nav">
-    <button class="hamburger" @click="open = ! open">
-      <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <path
-            d="M0 16h24v-2.667H0V16zm0-6.667h24V6.667H0v2.666zM0 0v2.667h24V0H0z"
-            id="a"
-          >
-          </path>
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-          <mask fill="#fff" id="b">
-            <use href="#a"> </use>
-          </mask>
-          <use fill="#000" fill-rule="nonzero" href="#a"> </use>
-          <g mask="url(#b)">
-            <path d="M-4-8h32v32H-4z" fill="#034AD8"> </path>
-          </g>
-        </g>
-      </svg>
-    </button>
     <ul
       class="header__nav-links"
       x-show="open"
@@ -182,12 +163,23 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
 <style>
   .header__container {
     /* max-width: var(--pageContainer); */
+    max-width: 100%;
     margin: 0 auto;
     /* padding-inline: var(--pagePadding); */
   }
 
   .header li {
     list-style-type: none;
+  }
+
+  .header__top {
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    background: #ed2e7b;
+    color: #fff;
+    padding: 20px 0;
+    min-width: 0;
   }
 
   .header__nav {
@@ -198,6 +190,7 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
     background: #ed2e7b;
     color: #fff;
     padding: 20px 0;
+    min-width: 0;
   }
   .header__logo-link h1{
     color: #ec4899 !important;
@@ -207,9 +200,10 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
   }
 
   .header__nav-links {
-    position: absolute;
+    /* position: fixed; */
+    position: static;
     z-index: 99;
-    background-color: white;
+    /* background-color: white; */
     right: 0;
     bottom: 0;
     top: 5rem;
@@ -221,6 +215,9 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
     padding: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    min-width: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
   }
   .header__nav-link {
     cursor: pointer;
@@ -228,8 +225,15 @@ c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18
   .header__nav-link:hover {
     color: #034ad8;
   }
+  .header__nav-links[x-show="open"] {
+  transform: translateY(0);
+}
 
   @media screen and (min-width: 600px) {
+
+    .header_top{
+      display: flex;
+    }
     .header__nav-links {
       position: static;
       display: flex !important;
