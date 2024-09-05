@@ -27,5 +27,9 @@ content_blocks:
         description: Rum Caramel
   - _bookshop_name: cta
     title: Welcome
-    fields: []
+    fields:
+      - type: string
+        label: Topper Text
+        key: topper_text
+        default: Your Vision, Our Priority
 ---
